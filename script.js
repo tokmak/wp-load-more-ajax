@@ -24,7 +24,7 @@ $('.load_more:not(.loading)').live('click',function(e){
 							var $newElems = $(response['html'].replace(/(\r\n|\n|\r)/gm, ''));// here removing extra breaklines and spaces
 							$('#posts_list').append($newElems);
 						} else {
-							//end of posts (no pots found)
+							//end of posts (no posts found)
 							$load_more_btn.removeClass('loading').addClass('end_of_posts').html('<span>End of posts</span>'); // change buttom styles if no more posts
 						}
 		         	}
