@@ -2,7 +2,7 @@
 // enqueue_scripts: make sure to include ajaxurl, so we know where to send the post request
 function dt_add_main_js(){
   
-  wp_register_script( 'main-js', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '1.0', false );
+  wp_register_script( 'main-js', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '1.0', false );
   wp_enqueue_script( 'main-js' );
   wp_localize_script( 'main-js', 'headJS', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ), 'templateurl' => get_template_directory_uri(), 'posts_per_page' => get_option('posts_per_page') ) );
   
