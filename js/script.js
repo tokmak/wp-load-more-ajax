@@ -16,7 +16,7 @@ $('.load_more:not(.loading)').live('click',function(e){
 					data : {action: "load_more_func", offset:offset, nonce:nonce, post_type:post_type, posts_per_page:headJS.posts_per_page},
 		         	beforeSend: function(data) {
 						// here u can do some loading animation...
-						$load_more_btn.addClass('loading').html('Loading...');// good for styling and also to prevent ajax calls before content is loaded
+						$load_more_btn.addClass('loading').html('Loading...');// good for styling and also to prevent ajax calls before content is loaded by adding loading class
 		         	},
 		         	success: function(response) {
 						if (response['have_posts'] == 1){//if have posts:
