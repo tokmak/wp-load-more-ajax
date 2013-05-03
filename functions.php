@@ -55,7 +55,7 @@ function load_more_func() {
             $result = json_encode($result); // incode resul arrat into json
             echo $result; // by echo we return JSON feed on POST request sent via AJAX
         }
-        else { // exceprion for non standard request - return to where request has been sent from
+        else { 
             header("Location: ".$_SERVER["HTTP_REFERER"]);
         }
   die();
