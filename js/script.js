@@ -5,7 +5,7 @@
 $('.load_more:not(.loading)').live('click',function(e){
 	e.preventDefault();
 	var $load_more_btn = $(this);
-	var post_type = 'post'; // this is optional and can be set from anything
+	var post_type = 'post'; // this is optional and can be set from anywhere, stored in mockup etc...
 	var offset = $('#posts_list .single-article').length;
 	var nonce = $load_more_btn.attr('data-nonce');
 	$.ajax({
