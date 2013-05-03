@@ -15,7 +15,7 @@ add_action( "wp_ajax_nopriv_load_more", "load_more_func" );//when logged out
 //function return new posts based on offset and posts per page value
 function load_more_func() {
   //verifying nonce here
-    if ( !wp_verify_nonce( $_REQUEST['nonce'], "load_page" ) ) {
+    if ( !wp_verify_nonce( $_REQUEST['nonce'], "load_posts" ) ) {
       exit("No naughty business please");
     }     
   $offset = isset($_REQUEST['offset'])?intval($_REQUEST['offset']):0;
