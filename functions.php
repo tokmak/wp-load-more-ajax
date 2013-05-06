@@ -52,7 +52,7 @@ function load_more_func() {
 	  $result['have_posts'] = false; // return that there is no posts found
   } 
         if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-            $result = json_encode($result); // incode resul arrat into json
+            $result = json_encode($result); // encode result array into json feed
             echo $result; // by echo we return JSON feed on POST request sent via AJAX
         }
         else { 
