@@ -8,4 +8,4 @@
 	<article class="single-article"> <!-- posts content --> </article>
 </div>
 
-<a class="load_more" <?php echo wp_create_nonce('load_posts') ?> href="javascript:;">Load more</a>
+<a class="load_more" data-nonce="<?php echo wp_create_nonce('load_posts') ?>" href="javascript:;">Load more</a>
