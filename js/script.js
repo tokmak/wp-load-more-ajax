@@ -13,7 +13,7 @@ $('.load_more:not(.loading)').live('click',function(e){
 		        	context: this,
 		         	dataType : "json",
 		         	url : headJS.ajaxurl,
-					data : {action: "load_more_func", offset:offset, nonce:nonce, post_type:post_type, posts_per_page:headJS.posts_per_page},
+					data : {action: "load_more", offset:offset, nonce:nonce, post_type:post_type, posts_per_page:headJS.posts_per_page},
 		         	beforeSend: function(data) {
 						// here u can do some loading animation...
 						$load_more_btn.addClass('loading').html('Loading...');// good for styling and also to prevent ajax calls before content is loaded by adding loading class
