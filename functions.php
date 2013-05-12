@@ -31,7 +31,7 @@ function load_more_func() {
 				'posts_per_page' => $posts_per_page,
 				'orderby' => 'date',
 				'order' => 'DESC'
-					)
+					);
   $posts_query = new WP_Query( $args );
   
   
